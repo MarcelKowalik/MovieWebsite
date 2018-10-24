@@ -1,0 +1,38 @@
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-17T122056.200.json
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-17T115239.404.html
+
+###
+
+GET http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-17T114642.200.json
+
+###
+
+GET http://localhost:3000/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-17T114618.404.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+

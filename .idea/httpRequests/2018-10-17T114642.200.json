@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1000000,
+    "title": "Shrek",
+    "year": 2018,
+    "upvotes": 1
+  },
+  {
+    "id": 1000001,
+    "title": "Mission Impossible",
+    "year": 2007,
+    "upvotes": 2
+  },
+  {
+    "id": 1000002,
+    "title": "IT",
+    "year": 2015,
+    "upvotes": 1
+  }
+]
