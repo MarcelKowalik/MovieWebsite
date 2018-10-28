@@ -1,3 +1,427 @@
+GET http://localhost:3000/movies/votes
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "title":"Shrek","year":2006,"upvotes":0 }
+
+<> 2018-10-28T113543.200.json
+
+###
+
+GET http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "title":"Shrek","year":2006,"upvotes":0 }
+
+<> 2018-10-28T105807.200.json
+
+###
+
+POST http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "title":"Shrek","year":2006,"upvotes":0 }
+
+<> 2018-10-28T105758.200.json
+
+###
+
+GET http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "title":"Shrek","year":2006,"upvotes":0 }
+
+<> 2018-10-28T105545.200.json
+
+###
+
+POST http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "title":"Shrek","year":2006,"upvotes":0 }
+
+<> 2018-10-28T105533.200.json
+
+###
+
+GET http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-28T105401.200.json
+
+###
+
+GET http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-28T105253.404.html
+
+###
+
+DELETE http://localhost:3000/movies
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-28T105243.404.html
+
+###
+
+DELETE http://localhost:3000/actors/5bd4747efaac4a5ac4e97106/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-27T053046.200.json
+
+###
+
+DELETE http://localhost:3000/actors/5bd4747efaac4a5ac4e97106/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-27T052951.404.html
+
+###
+
+GET http://localhost:3000/actors/5bd4747efaac4a5ac4e97106/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-27T052946.404.html
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-27T052936.200.json
+
+###
+
+DELETE http://localhost:3000/actors/5bd488d01945d25b351f4ede
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-27T052734.404.html
+
+###
+
+DELETE http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-27T052718.404.html
+
+###
+
+DELETE http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+5bd488d01945d25b351f4ede
+
+<> 2018-10-27T052707.400.html
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"01-01-1998" }
+
+<> 2018-10-27T052609.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"01-01-1998" }
+
+<> 2018-10-27T044851.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"10011999" }
+
+<> 2018-10-27T044832.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"10-01-1999" }
+
+<> 2018-10-27T044807.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"10-01-1999" }
+
+<> 2018-10-27T044244.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"1956-01-01" }
+
+<> 2018-10-27T044213.200.json
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"1956-01-01" }
+
+<> 2018-10-27T044205.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":"1956-01-01" }
+
+<> 2018-10-27T044152.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":1956-01-01 }
+
+<> 2018-10-27T044016.400.html
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":1956 }
+
+<> 2018-10-27T043653.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "nationality":"Irelad","name":"Johd Williams","dob":1956 }
+
+<> 2018-10-27T032150.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Irelad","name":"Johd Williams","dob":1956}
+
+<> 2018-10-27T030612.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Irelad","name":"Johd Williams","dob":1956}
+
+<> 2018-10-27T030339.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Irelad","name":"Johd Williams","dob":1956}
+
+<> 2018-10-27T030155.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T025844.200.json
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T025740.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T025727.200.json
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T025652.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T025645.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T025352.404.html
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T024623.200.json
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T024544.404.html
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T024451.404.html
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T024141.404.html
+
+###
+
+GET http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{"nationality":"Ireland","name":"John Williams","dob":1956}
+
+<> 2018-10-27T024050.404.html
+
+###
+
+POST http://localhost:3000/actors
+Accept: */*
+Cache-Control: no-cache
+
+{nationality: Ireland, name: 'John Williams', dob:1956}
+
+<> 2018-10-27T023928.404.html
+
+###
+
 GET http://localhost:3000/actors
 Accept: */*
 Cache-Control: no-cache

@@ -1,19 +1,13 @@
 let mongoose = require('mongoose');
 
 let ActorSchema = new mongoose.Schema({
-        id: Number,
+        nationality: String,
         name: String,
-        dob: Number
+        dob: String
     },
     { collection: 'actorsdb' });
 
-module.exports = mongoose.model('Actors', ActorSchema);
+module.exports = mongoose.model('Actor', ActorSchema);
+//module.exports = actors;
 
-const actors = [
-    {id: 1000000, name: 'Adam Sandler', dob: 1968},
-    {id: 1000001, name: '', dob: 2007},
-    {id: 1000002, name: '', dob: 2015}
-];
-
-module.exports = actors;
 

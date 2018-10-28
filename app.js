@@ -27,10 +27,15 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 
-app.get('/movies', movies.findAll); //-------------------------------------
-app.get('/actors', actors.findAll); //---------------
-
 app.post('/movies',movies.addMovie);
+app.post('/actors',actors.addActor);
+
+app.get('/movies', movies.findAll);
+app.get('/movies/votes', movies.findTotalVotes);
+app.get('/actors', actors.findAll);
+
+app.delete('/actors/:id', actors.deleteActor);
+app.delete('/movies/:id', movies.deleteMovie);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
