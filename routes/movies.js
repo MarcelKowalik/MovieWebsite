@@ -152,6 +152,9 @@ router.findMovieByGenre = (req, res) => {
     }))
 };
 
+/*
+Up votes a movie
+ */
 router.incrementUpvotes = (req, res) => {
 
     Movie.findById(req.params.id, function(err,movie) {
@@ -168,7 +171,9 @@ router.incrementUpvotes = (req, res) => {
         }
     });
 }
-
+/*
+Down votes a Movie
+ */
 router.incrementDownvotes = (req, res) => {
 
     Movie.findById(req.params.id, function(err,movie) {

@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 /*
-NOT COMPLETE YET.
+NOT COMPLETE YET. Will be working on it for the second part of assignment.
  */
 
 module.exports = router;

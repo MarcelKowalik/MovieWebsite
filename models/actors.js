@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 
 /*
-Actors schema
+Actors schema (Not Complete)
  */
 let ActorSchema = new mongoose.Schema({
         name: {type: String, default: ""},
