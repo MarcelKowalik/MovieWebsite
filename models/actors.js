@@ -1,13 +1,17 @@
 let mongoose = require('mongoose');
 
+/*
+Actors schema
+ */
 let ActorSchema = new mongoose.Schema({
-        nationality: String,
-        name: String,
-        dob: String
+        name: {type: String, default: ""},
+        dob: {type: String, default: ""},
+        nationality: {type: String, default: ""},
+
     },
     { collection: 'actorsdb' });
 
 module.exports = mongoose.model('Actor', ActorSchema);
-//module.exports = actors;
+
 
 
