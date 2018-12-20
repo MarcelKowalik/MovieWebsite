@@ -27,7 +27,7 @@ router.findAll = (req, res) => {
         if (err)
             res.send(err);
 
-        res.send(JSON.stringify(movies,null,5));
+        res.send(movies, null, 5);   //modified removed JSON stringify
     });
 }
 
@@ -42,7 +42,7 @@ router.findOne = (req, res) => {
         if (err)
             res.json({ message: 'Movie NOT Found!', errmsg : err } );
         else
-            res.send(JSON.stringify(movie,null,5));
+            res.send(movie,null,5);
     });
 }
 
@@ -128,6 +128,27 @@ router.addMovieReview = (req, res) =>{
                 })
             }
         });
+};
+
+router.updateMovie = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+
+    Movie.findByIdAndUpdate(req.params.id, {
+            $set: {
+                title: req.body.title,
+                genre: req.body.genre,
+                year: req.body.year,
+                duration: req.body.duration,
+                upvotes: req.body.upvotes
+            }
+        },
+        function (err, movie) {
+            if (err)
+                return res.send(err);
+            else
+                return res.send(JSON.stringify(movie,null,5))
+        }
+    )
 };
 
 router.findMovieByTitle = (req, res) => {
@@ -233,12 +254,7 @@ router.changeGenre = (req, res) =>{
         else
             return res.send(JSON.stringify(movie,null,5))
     });
-};
 
-//Not Complete
-/*
-function updateRating(array, newRating) {
-}
-*/
+};
 
 module.exports = router;
